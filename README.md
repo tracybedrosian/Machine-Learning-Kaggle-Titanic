@@ -98,8 +98,8 @@ test <- full_data[892:1309,]
 ### 7. Make survival predictions
 Use our newly created features along with the given variables to run a random forest model that predicts which passengers survived
 ```
-rf_model <- randomForest(factor(Survived) ~ Pclass + Title + Sex + SibSp + Age  
-                                  + Parch + Fare + Embarked + Child + familysize, data=train)  
+rf_model <- randomForest(factor(Survived) ~ Pclass + Title + Sex + SibSp + Age 
+                         + Parch + Fare + Embarked + Child + familysize, data=train)  
 plot(rf_model)  
 prediction <- predict(rf_model, test)
 ```
